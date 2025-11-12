@@ -10,6 +10,9 @@ The insights and recommendations were based on three key areas/demographics:
 - **Smart Device Feature Usage:** An evaluation of what proportion of total users used certain features such as sleep and/or weight tracking. 
 
 ## Part 2: Original Data Structure & Information
+The orginal smart device data consisted of .....
+
+After data wrangling, the final strucure of 
 
 ## Part 3: Executive Summary (Overview of Findings)
 
