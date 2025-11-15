@@ -14,9 +14,9 @@ The orginal smart device data consisted of .....
 
 After data wrangling, the final strucure of 
 
-## Part 3: Executive Summary (Overview of Findings)
+## Part 4: Executive Summary (Overview of Findings)
 
-## Part 4: Further Insights
+## Part 5: Further Insights
 
-## Part 5: Shareholder Recommendations
+## Part 6: Shareholder Recommendations
 
