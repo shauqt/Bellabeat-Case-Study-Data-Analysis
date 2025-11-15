@@ -9,14 +9,126 @@ The insights and recommendations were based on three key areas/demographics:
 - **User Physical Level/Activity Assessment:** An assessment of a user's overall physical activity taking into account their Daily Steps and Metabolic Equivalent of Tasks (METs).
 - **Smart Device Feature Usage:** An evaluation of what proportion of total users used certain features such as sleep and/or weight tracking. 
 
-## Part 2: Original Data Structure & Information
-The orginal smart device data consisted of .....
+## Part 2: Original Data Structure
+The Bellabeat dataset is composed of smart device data tracking users through their activity, caloric intake, sleep behaviours, and weight logging. 
 
-After data wrangling, the final strucure of 
+The orginal smart device data is composed as shown below:
 
-## Part 4: Executive Summary (Overview of Findings)
+ <table>
+<tr>
+<td valign="top" width="50%">
 
-## Part 5: Further Insights
+### weightLogInfo_merged
 
-## Part 6: Shareholder Recommendations
+| Column Name      | Data Type |
+|------------------|-----------|
+| Id               | int64     |
+| Date             | date      |
+| WeightKg         | float64   |
+| WeightPounds     | float64   |
+| Fat              | float64   |
+| BMI              | float64   |
+| IsManualReport   | bool      |
+| LogId            | int64     |
+
+</td>
+<td valign="top" width="50%">
+
+### sleepDay_merged
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| Id                  | int64     |
+| SleepDay            | date      |
+| TotalSleepRecords   | int64     |
+| TotalMinutesAsleep  | int64     |
+| TotalTimeInBed      | int64     |
+
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### dailyActivity_merged
+
+| Column Name               | Data Type |
+|---------------------------|-----------|
+| Id                        | int64     |
+| ActivityDate              | date      |
+| TotalSteps                | int64     |
+| TotalDistance             | float64   |
+| TrackerDistance           | float64   |
+| LoggedActivitiesDistance  | float64   |
+| VeryActiveDistance        | float64   |
+| ModeratelyActiveDistance  | float64   |
+| LightActiveDistance       | float64   |
+| SedentaryActiveDistance   | float64   |
+| VeryActiveMinutes         | int64     |
+| FairlyActiveMinutes       | int64     |
+| LightlyActiveMinutes      | int64     |
+| SedentaryMinutes          | int64     |
+| Calories                  | int64     |
+
+</td>
+<td valign="top">
+
+### weight_over_time
+
+| Column Name     | Data Type |
+|-----------------|-----------|
+| Id              | int64     |
+| logdate         | date      |
+| weightpounds    | float64   |
+| bmi             | float64   |
+
+<br/>
+
+### sleep_over_time
+
+| Column Name        | Data Type |
+|--------------------|-----------|
+| id                 | int64     |
+| sleepday           | date      |
+| totalhoursasleep   | float64   |
+| totalhoursinbed    | float64   |
+
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### kpi_2_avg_sleep_per_Id
+
+| Column Name | Data Type |
+|-------------|-----------|
+| Id          | int64     |
+| avg_sleep   | float64   |
+
+</td>
+<td valign="top">
+
+### categorized_user_activity
+
+| Column Name     | Data Type |
+|-----------------|-----------|
+| activity_type   | string    |
+| total           | int64     |
+| user_percentage | float64   |
+
+</td>
+</tr>
+</table>
+
+
+## Part 3: Cleaning & Preprocessing
+
+## Part 4: Cleaned Data Structure
+
+## Part 5: Executive Summary (Overview)
+
+## Part 6: Deeper Analysis + Visuals
+
+## Part 7: Shareholder Recommendations
 
