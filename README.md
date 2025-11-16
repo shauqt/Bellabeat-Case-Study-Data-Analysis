@@ -99,7 +99,15 @@ The orginal smart device data is composed as shown below:
 
 ## Part 3: Cleaning & Preprocessing
 
+During the initial exploratory data analysis, I did not find any major data quality issues such as missing values or duplicated rows. However, I still implemented a small Python cleaning script using Pandas to automatically handle any potential inconsistencies that may not have been immediately visible during manual inspection.
+
+To streamline the analysis across key areas (sleep/weight patterns, fitness activity, and feature usage), I applied several data transformations. I removed rows that were irrelevant to the project and converted datetime columns to date-only formats. This not only simplified time-based analysis but also prevented formatting inconsistencies when importing the data into Power BI and working with it in Power Query.
+
+Certain tables, specifically the the  were also created using SQL 
+
 ## Part 4: Cleaned Data Structure
+
+After transforming and cleaning the data, the final structure of the tables looked as shown below:
 
 ## Part 5: Executive Summary (Overview)
 
