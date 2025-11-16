@@ -103,7 +103,7 @@ During the initial exploratory data analysis, I did not find any major data qual
 
 To streamline the analysis across key areas (sleep/weight patterns, fitness activity, and feature usage), I applied several data transformations. I removed rows that were irrelevant to the project and converted datetime columns to date-only formats. This not only simplified time-based analysis but also prevented formatting inconsistencies when importing the data into Power BI and working with it in Power Query.
 
-Certain tables, specifically the the  were also created using SQL 
+Using SQL, I also joined multiple tables to create new, analysis-ready datasets that highlighted specific insights and relationships. In particular, I generated a weight_log_usage table and a sleep_log_usage table to more effectively examine usage patterns and behavioral trends.
 
 ## Part 4: Cleaned Data Structure
 
