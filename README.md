@@ -10,7 +10,7 @@ The insights and recommendations were based on three key areas/demographics:
 - **Smart Device Feature Usage:** An evaluation of what proportion of total users used certain features such as sleep and/or weight tracking. 
 
 ## Part 2: Original Data Structure
-The Bellabeat dataset is composed of smart device data tracking users through their activity, caloric intake, sleep behaviours, and weight logging. 
+The Bellabeat dataset is composed of smart device data tracking users through their activity, caloric intake, sleep behaviours, and weight logging. The data was tracked over 30 days, starting from 04/12/2016 and ending on 05/12/2016.
 
 The orginal smart device data is composed as shown below:
 
@@ -23,7 +23,7 @@ The orginal smart device data is composed as shown below:
 | Column Name      | Data Type |
 |------------------|-----------|
 | Id               | int64     |
-| Date             | date      |
+| Date             | datetime  |
 | WeightKg         | float64   |
 | WeightPounds     | float64   |
 | Fat              | float64   |
@@ -39,7 +39,7 @@ The orginal smart device data is composed as shown below:
 | Column Name         | Data Type |
 |---------------------|-----------|
 | Id                  | int64     |
-| SleepDay            | date      |
+| SleepDay            | datetime  |
 | TotalSleepRecords   | int64     |
 | TotalMinutesAsleep  | int64     |
 | TotalTimeInBed      | int64     |
@@ -73,54 +73,29 @@ The orginal smart device data is composed as shown below:
 </td>
 <td valign="top">
 
-### weight_over_time
+### dailySteps_merged
 
 | Column Name     | Data Type |
 |-----------------|-----------|
 | Id              | int64     |
-| logdate         | date      |
-| weightpounds    | float64   |
-| bmi             | float64   |
+| ActivityDay     | date      |
+| StepTotal       | int64     |
 
 <br/>
 
-### sleep_over_time
+### minuteMETsNarrow_merged
 
 | Column Name        | Data Type |
 |--------------------|-----------|
 | id                 | int64     |
-| sleepday           | date      |
-| totalhoursasleep   | float64   |
-| totalhoursinbed    | float64   |
-
-</td>
-</tr>
-
-<tr>
-<td valign="top">
-
-### kpi_2_avg_sleep_per_Id
-
-| Column Name | Data Type |
-|-------------|-----------|
-| Id          | int64     |
-| avg_sleep   | float64   |
-
-</td>
-<td valign="top">
-
-### categorized_user_activity
-
-| Column Name     | Data Type |
-|-----------------|-----------|
-| activity_type   | string    |
-| total           | int64     |
-| user_percentage | float64   |
+| ActivityMinute     | datetime  |
+| METs               | int64     |
 
 </td>
 </tr>
 </table>
 
+*Note: minuteMETsNarrow_merged was not uploaded due to file size. However, it was cleaned using Python and uploaded to Power BI.  
 
 ## Part 3: Cleaning & Preprocessing
 
