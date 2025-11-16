@@ -14,7 +14,7 @@ The Bellabeat dataset is composed of smart device data tracking users through th
 
 The orginal smart device data is composed as shown below:
 
- <table>
+<table>
 <tr>
 <td valign="top" width="50%">
 
@@ -107,9 +107,101 @@ Using SQL, I also joined multiple tables to create new, analysis-ready datasets 
 
 ## Part 4: Cleaned Data Structure
 
-After transforming and cleaning the data, the final structure of the tables looked as shown below:
+After transforming and cleaning the data, the final structure of the tables used for analysis looked as shown below:
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### weight_over_time
+
+| Column Name      | Data Type |
+|------------------|-----------|
+| id               | int64     |
+| logdate          | date      |
+| weightpounds     | float64   |
+| bmi              | float64   |
+
+</td>
+<td valign="top" width="50%">
+
+### sleep_over_time
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| id                  | int64     |
+| sleepday            | date      |
+| totalhoursasleep    | float64   |
+| totalhoursinbed     | float64   |
+
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### categorized_user_activity
+
+| Column Name               | Data Type |
+|---------------------------|-----------|
+| acitivty_type             | varchar   |
+| total                     | int64     |
+| user_percentage           | float64   |
+
+</td>
+<td valign="top">
+
+### dailySteps
+
+| Column Name     | Data Type |
+|-----------------|-----------|
+| Id              | int64     |
+| StepTotal       | float64   |
+
+<br/>
+
+### minuteMETsNarrow_merged
+
+| Column Name        | Data Type |
+|--------------------|-----------|
+| id                 | int64     |
+| ActivityMinute     | datetime  |
+| METs               | int64     |
+
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### sleep_log_usage
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| usage_level         | varchar   |
+| user_count          | int64     |
+| user_percentage     | float64   |
+| total_user_percent..| float64   |
+
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### weight_log_usage
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| usage_level         | varchar   |
+| user_count          | int64     |
+| user_percentage     | float64   |
+| total_user_percent..| float64   |
+
+</table>
 
 ## Part 5: Executive Summary (Overview)
+
 
 ## Part 6: Deeper Analysis + Visuals
 
