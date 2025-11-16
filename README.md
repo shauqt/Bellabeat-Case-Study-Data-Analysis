@@ -158,7 +158,8 @@ After transforming and cleaning the data, the final structure of the tables used
 | Id              | int64     |
 | StepTotal       | float64   |
 
-<br/>
+</td>
+<td valign="top">
 
 ### minuteMETsNarrow_merged
 
