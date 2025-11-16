@@ -185,6 +185,43 @@ After transforming and cleaning the data, the final structure of the tables used
 | user_percentage     | float64   |
 | total_user_percent..| float64   |
 
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+
+### METS_3
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| Id                  | int64     |
+| Date                | date      |
+| Day                 | varchar   |
+| Hour                | int64     |
+| METs                | int64     |
+
+</td>
+<td valign="top">
+
+### METs_avg
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| ActivityMinute      | time      |
+| METs                | float64   |
+
+<br/>
+
+### avg_sleep_per_id
+
+| Column Name         | Data Type |
+|---------------------|-----------|
+| Id                  | int64     |
+| avg_sleep           | float64   |
+
+</td>
+</tr>
 </table>
 
 ## Part 5: Executive Summary (Overview)
