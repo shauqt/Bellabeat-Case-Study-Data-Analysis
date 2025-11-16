@@ -252,7 +252,27 @@ The full interactive Power BI dashboard can be downloaded [here](https://github.
 
 ## Part 6: Deeper Analysis 
 
-**Sleep Patterns**
+### Sleep Patterns
+
+---
+
+### Activity Levels
+
+---
+
+### METs Analysis
+
+---
+
+### Weight Tracking
+
+---
+
+### Other Insight
+
+--- 
 
 ## Part 7: Shareholder Recommendations
+
+
 
