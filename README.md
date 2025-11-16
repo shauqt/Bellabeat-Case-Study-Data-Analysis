@@ -236,7 +236,7 @@ Some quick insights:
 - Out of the 33 total participants, only 8 had substantial usage of weight logging.
 - Average METs generally peaked around 5-7 PM during the week. 
 
-The full interactive Power BI dashboard can be downloaded [here]([url](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix)).
+The full interactive Power BI dashboard can be downloaded [https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix](url)
 
 ## Part 6: Deeper Analysis 
 
