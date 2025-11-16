@@ -95,7 +95,7 @@ The orginal smart device data is composed as shown below:
 </tr>
 </table>
 
-*Note: minuteMETsNarrow_merged was not uploaded due to file size. However, it was cleaned using Python and uploaded to Power BI.  
+*Note: minuteMETsNarrow_merged was not uploaded due to file size. However, it was cleaned using Python. 
 
 ## Part 3: Cleaning & Preprocessing
 
@@ -224,10 +224,20 @@ After transforming and cleaning the data, the final structure of the tables used
 </tr>
 </table>
 
+*Note: METS_3 was not uploaded due to file size. However, it was cleaned using Python and uploaded to Power BI.  
+
 ## Part 5: Executive Summary (Overview)
 
+An overview summary shows that Bellabeat users are more active than the average, showcasing a customer importance on health and fitness. However, engagement with sleep and weight features remains relatively low. This gap could highlight an opportunity to increase app usage and retention. Using user behaviour patterns, such as peak METs, to allign Bellabeat's product features and marketing focus, would translate into long-term user value and stronger habit formation. 
 
-## Part 6: Deeper Analysis + Visuals
+Some quick insights:
+- Activity engagement is high: 70% of users are active daily.
+- Sleep tracking is used inconsistently: Many users sleep <7 hours and spend 1–2 hours awake in bed.
+- Weight logging adoption is low: Only 24% of users log their weight.
+
+The full interactive Power BI dashboard can be downloaded [here](url).
+
+## Part 6: Deeper Analysis 
 
 ## Part 7: Shareholder Recommendations
 
