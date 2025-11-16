@@ -174,9 +174,6 @@ After transforming and cleaning the data, the final structure of the tables used
 | total_user_percent..| float64   |
 
 </td>
-</tr>
-
-<tr>
 <td valign="top">
 
 ### weight_log_usage
