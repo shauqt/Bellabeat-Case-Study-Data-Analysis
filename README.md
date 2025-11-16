@@ -159,17 +159,6 @@ After transforming and cleaning the data, the final structure of the tables used
 | StepTotal       | float64   |
 
 </td>
-<td valign="top">
-
-### minuteMETsNarrow_merged
-
-| Column Name        | Data Type |
-|--------------------|-----------|
-| id                 | int64     |
-| ActivityMinute     | datetime  |
-| METs               | int64     |
-
-</td>
 </tr>
 
 <tr>
