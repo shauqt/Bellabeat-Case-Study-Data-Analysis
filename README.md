@@ -9,7 +9,7 @@ The insights and recommendations were based on three key areas/demographics:
 - **User Physical Level/Activity Assessment:** An assessment of a user's overall physical activity taking into account their Daily Steps and Metabolic Equivalent of Tasks (METs).
 - **Smart Device Feature Usage:** An evaluation of what proportion of total users used certain features such as sleep and/or weight tracking. 
 
-<br>
+---
 
 ## Part 2: Original Data Structure
 The Bellabeat dataset is composed of smart device data tracking users through their activity, caloric intake, sleep behaviours, and weight logging. The data was tracked over 30 days, starting from 04/12/2016 and ending on 05/12/2016.
@@ -99,6 +99,8 @@ The orginal smart device data is composed as shown below:
 
 *Note: minuteMETsNarrow_merged was not uploaded due to file size. However, it was cleaned using Python. 
 
+---
+
 ## Part 3: Cleaning & Preprocessing
 
 During the initial exploratory data analysis, I did not find any major data quality issues such as missing values or duplicated rows. However, I still implemented a small Python cleaning script using Pandas to automatically handle any potential inconsistencies that may not have been immediately visible during manual inspection.
@@ -106,6 +108,8 @@ During the initial exploratory data analysis, I did not find any major data qual
 To streamline the analysis across key areas (sleep/weight patterns, fitness activity, and feature usage), I applied several data transformations. I removed rows that were irrelevant to the project and converted datetime columns to date-only formats. This not only simplified time-based analysis but also prevented formatting inconsistencies when importing the data into Power BI and working with it in Power Query.
 
 Using SQL, I also joined multiple tables to create new, analysis-ready datasets that highlighted specific insights and relationships. In particular, I generated a weight_log_usage table and a sleep_log_usage table to more effectively examine usage patterns and behavioral trends.
+
+---
 
 ## Part 4: Cleaned Data Structure
 
@@ -228,6 +232,8 @@ After transforming and cleaning the data, the final structure of the tables used
 
 *Note: METS_3 was not uploaded due to file size. However, it was cleaned using Python and uploaded to Power BI.  
 
+---
+
 ## Part 5: Executive Summary (Overview)
 
 An overview summary shows that Bellabeat users are more active than the average, showcasing a customer importance on health and fitness. However, engagement with sleep and weight features remains relatively low. This gap could highlight an opportunity to increase app usage and retention. Using user behaviour patterns, such as peak METs, to allign Bellabeat's product features and marketing focus, would translate into long-term user value and stronger habit formation. 
@@ -246,7 +252,7 @@ The full interactive Power BI dashboard can be downloaded [here](https://github.
 
 ## Part 6: Deeper Analysis 
 
-
+**Sleep Patterns**
 
 ## Part 7: Shareholder Recommendations
 
