@@ -231,11 +231,12 @@ After transforming and cleaning the data, the final structure of the tables used
 An overview summary shows that Bellabeat users are more active than the average, showcasing a customer importance on health and fitness. However, engagement with sleep and weight features remains relatively low. This gap could highlight an opportunity to increase app usage and retention. Using user behaviour patterns, such as peak METs, to allign Bellabeat's product features and marketing focus, would translate into long-term user value and stronger habit formation. 
 
 Some quick insights:
-- Activity engagement is high: 70% of users are active daily.
-- Sleep tracking is used inconsistently: Many users sleep <7 hours and spend 1–2 hours awake in bed.
-- Weight logging adoption is low: Only 24% of users log their weight.
+- Roughly 70% of users partake in at least some form of light activity.
+- Many users demonstrate poor sleep quality, getting <7 hours and spend 1–2 hours awake in bed.
+- Out of the 33 total participants, only 8 had substantial usage of weight logging.
+- Average METs generally peaked around 5-7 PM during the week. 
 
-The full interactive Power BI dashboard can be downloaded [here](url).
+The full interactive Power BI dashboard can be downloaded [here]([url](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix)).
 
 ## Part 6: Deeper Analysis 
 
