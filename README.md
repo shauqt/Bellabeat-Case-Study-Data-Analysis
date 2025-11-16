@@ -9,6 +9,8 @@ The insights and recommendations were based on three key areas/demographics:
 - **User Physical Level/Activity Assessment:** An assessment of a user's overall physical activity taking into account their Daily Steps and Metabolic Equivalent of Tasks (METs).
 - **Smart Device Feature Usage:** An evaluation of what proportion of total users used certain features such as sleep and/or weight tracking. 
 
+<br>
+
 ## Part 2: Original Data Structure
 The Bellabeat dataset is composed of smart device data tracking users through their activity, caloric intake, sleep behaviours, and weight logging. The data was tracked over 30 days, starting from 04/12/2016 and ending on 05/12/2016.
 
@@ -231,6 +233,7 @@ After transforming and cleaning the data, the final structure of the tables used
 An overview summary shows that Bellabeat users are more active than the average, showcasing a customer importance on health and fitness. However, engagement with sleep and weight features remains relatively low. This gap could highlight an opportunity to increase app usage and retention. Using user behaviour patterns, such as peak METs, to allign Bellabeat's product features and marketing focus, would translate into long-term user value and stronger habit formation. 
 
 Here is the Power BI dashboard:
+
 <img width="1412" height="794" alt="dashboard_overview" src="https://github.com/user-attachments/assets/d04335b3-4f0f-4932-8192-6e036f2580be" />
 
 Some quick insights:
@@ -242,6 +245,8 @@ Some quick insights:
 The full interactive Power BI dashboard can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix)
 
 ## Part 6: Deeper Analysis 
+
+
 
 ## Part 7: Shareholder Recommendations
 
