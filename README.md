@@ -257,6 +257,7 @@ The full interactive Power BI dashboard can be downloaded [here](https://github.
 Averaging the total sleep duration of users shows that on average, users got about **6.29 hours of sleep** per night. In addition, when comparing the amount of time spent in bed versus the amount of time asleep in, users are seen often spending an **additional 1-2 hours awake while in bed**. This pattern continued throughout the 30 days of the experiment as seen in _Figure 1_. These two insights indicate that the users have **low sleep efficieny**, potentially derviving from stress, poor bedtime routines, and lengthly late-night screen exposure.
 
 <img width="605" height="579" alt="image" src="https://github.com/user-attachments/assets/9a2caae3-be0e-4c2d-808c-f5ec575cf1fb" />
+
 _Figure 1: Average Hours Asleep Versus Hours in Bed Over 30 Days_
 
 **Key Takeaways:**
