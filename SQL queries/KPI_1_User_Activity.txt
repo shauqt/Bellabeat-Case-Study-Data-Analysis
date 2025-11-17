@@ -1,0 +1,42 @@
+WITH summed_activity AS (   -- grouping by id aggregate the total number steps per user 
+SELECT 
+	id, 
+    SUM(TotalSteps) AS total_steps
+FROM dailyactivity
+GROUP BY id
+),
+
+activity_summary AS ( -- categorize users by the number of steps they took and count the number of instances
+SELECT 
+	COUNT(CASE WHEN total_steps >= (12500 * 30) THEN 1 END) AS num_very_active, 
+    COUNT(CASE WHEN total_steps BETWEEN (10000 * 30) AND (12500 * 30) THEN 1 END) AS num_active,
+    COUNT(CASE WHEN total_steps BETWEEN (7500 * 30) AND (10000 * 30) THEN 1 END) AS num_fairly_active,
+	COUNT(CASE WHEN total_steps BETWEEN (5000 * 30) AND (7500 * 30) THEN 1 END) AS num_lightly_active,
+    COUNT(CASE WHEN total_steps <= (5000 * 30) THEN 1 END) AS num_non_active
+FROM summed_activity
+), 
+
+transformed_table AS ( -- transform acitivity_summary from horizontal format to vertical
+SELECT 'num_very_active' AS activity_type, num_very_active AS total FROM activity_summary
+UNION ALL
+SELECT 'num_active', num_active FROM activity_summary
+UNION ALL
+SELECT 'num_fairly_active', num_fairly_active FROM activity_summary
+UNION ALL
+SELECT 'num_lightly_active', num_lightly_active FROM activity_summary
+UNION ALL
+SELECT 'num_non_active', num_non_active FROM activity_summary
+), 
+
+total_users AS ( -- a CTE to calculate the total number of users
+SELECT
+	*,
+	(SELECT SUM(total) FROM transformed_table) AS total_sum
+  FROM transformed_table
+)
+
+SELECT -- final query to show output table of user's activity
+  activity_type,
+  total,
+  ROUND(((total / total_sum) * 100), 2) AS user_percentage
+FROM total_users; 

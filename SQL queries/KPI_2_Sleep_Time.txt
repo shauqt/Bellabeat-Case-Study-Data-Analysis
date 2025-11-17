@@ -1,0 +1,40 @@
+with avg_sleeptime as (
+select
+	id, 
+    round(AVG(TotalHoursAsleep), 2) as avg_sleep
+from sleepday
+group by id
+),
+
+user_sleep_time as (
+select
+	id, 
+	case
+		when avg_sleep >= 9 then "More Than 9 Hours"
+        when avg_sleep between 7 and 9 then "7-9 Hours" 
+        when avg_sleep between 4 and 7 then "4-7 Hours" 
+        when avg_sleep < 4 then "Less Than 4 Hours"
+	end as sleep_time
+from avg_sleeptime),
+
+sleep_time_distribution as (
+select
+	sleep_time, 
+    count(*) as num_users
+from user_sleep_time
+group by sleep_time
+),
+
+user_count as (
+select
+	sum(num_users) as total_users
+from sleep_time_distribution
+)
+
+select
+	sleep_time, 
+    num_users, 
+    ROUND(((sqd.num_users / uc.total_users) * 100), 2) as percentage_of_users
+from sleep_time_distribution sqd
+cross join user_count uc;
+

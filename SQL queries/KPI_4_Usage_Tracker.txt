@@ -1,0 +1,61 @@
+with total_entries as (
+select
+	id, 
+    count(*) as num_recorded
+from sleepday
+group by id
+),
+
+user_usage as (
+select
+	id, 
+	case 
+		when num_recorded < 7 then "Low Usage"
+        when num_recorded between 7 and 21 then "Med Usage"
+        when num_recorded > 21 then "High Usage"
+	end as usage_level
+from total_entries
+), 
+
+usage_distribution as (
+select 
+	usage_level, 
+    count(*) as user_count
+from user_usage
+group by usage_level
+),
+
+usage_dist_with_total_users as (
+select 
+	count(*) AS total_users
+FROM user_usage
+), 
+
+total_db_users as (
+select
+	COUNT(distinct id) as total_unique_users
+from (
+	select id from dailyactivity
+    union
+    select id from dailycalories
+    union
+    select id from sleepday
+    union
+    select id from weightloginfo
+) as all_tables
+)
+
+SELECT
+    ud.*,
+    ROUND(ud.user_count * 100 / udt.total_users, 2) AS user_percentage,
+    ROUND(ud.user_count * 100 / tdb.total_unique_users, 2) AS total_user_percentage
+FROM
+    usage_distribution ud
+CROSS JOIN
+    usage_dist_with_total_users udt
+CROSS JOIN
+    total_db_users tdb
+order by usage_level DESC;
+
+
+    

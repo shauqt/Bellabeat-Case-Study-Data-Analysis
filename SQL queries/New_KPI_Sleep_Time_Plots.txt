@@ -1,0 +1,21 @@
+with log_more_than_21 as (
+select 
+	id, 
+    count(*) as num_instances
+from sleepday
+group by id
+having count(*) >= 21
+)
+
+select 
+	id, 
+    sleepday, 
+    totalhoursasleep, 
+    totalhoursinbed
+from sleepday
+where id in (
+	select
+		id
+	from log_more_than_21
+)
+order by id ASC, sleepday ASC;
