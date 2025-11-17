@@ -111,7 +111,7 @@ Using SQL, I also joined multiple tables to create new, analysis-ready datasets 
 
 The Python file can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/bellabeat.ipynb).
 
-The SQL queries can be accessed in this 
+The SQL queries can be accessed in this [folder](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/tree/main/SQL%20queries)
 
 ---
 
