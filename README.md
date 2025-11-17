@@ -349,5 +349,8 @@ Based on user demographics, behaviours, and engagement, it is recommended that B
 
 ## Part 8: Future Steps & Improvements
 
+Although this analysis highlights key insights and recommendations to support Bellabeat’s growth, further work could deepen the strategy and provide clearer guidance for long-term development.
 
+Collecting more granular smart device data, particularly demographic variables like age, gender, and location, would allow Bellabeat to develop a clearer understanding of its user base and uncover specific customer segments worth targeting.
 
+Ultimately, this analysis should be viewed as a starting point. Conducting further market research—aligned with the trends uncovered here—will enable Bellabeat to build a more focused and actionable marketing strategy.
