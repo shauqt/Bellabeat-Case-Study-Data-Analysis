@@ -243,9 +243,9 @@ Here is the Power BI dashboard:
 <img width="1412" height="794" alt="dashboard_overview" src="https://github.com/user-attachments/assets/d04335b3-4f0f-4932-8192-6e036f2580be" />
 
 Some quick insights:
-- Roughly 70% of users partake in at least some form of light activity.
+- Roughly 70% of users partake in at least some form of light activity, with the average number of daily steps taken by users being 7520.
 - Many users demonstrate poor sleep quality, getting <7 hours and spend 1–2 hours awake in bed.
-- Out of the 33 total participants, only 8 had substantial usage of weight logging.
+- Out of the 33 total participants, 24 utilized sleep logging features whereas only 8 had substantial usage of weight logging.
 - Average METs generally peaked around 5-7 PM during the week.
 
 The full interactive Power BI dashboard can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix)
@@ -254,21 +254,33 @@ The full interactive Power BI dashboard can be downloaded [here](https://github.
 
 ### Sleep Patterns
 
----
+Averaging the total sleep duration of users shows that on average, users got about **6.29 hours of sleep** per night. In addition, when comparing the amount of time spent in bed versus the amount of time asleep in, users are seen often spending an **additional 1-2 hours awake while in bed**. This pattern continued throughout the 30 days of the experiment as seen in _Figure 1_. These two insights indicate that the users have **low sleep efficieny**, potentially derviving from stress, poor bedtime routines, and lengthly late-night screen exposure.
 
-### Activity Levels
+<img width="605" height="579" alt="image" src="https://github.com/user-attachments/assets/9a2caae3-be0e-4c2d-808c-f5ec575cf1fb" />
+_Figure 1: Average Hours Asleep Versus Hours in Bed Over 30 Days_
 
----
-
-### METs Analysis
+**Key Takeaways:**
+- Average **time spent in bed is consistently 2 hours greater than asleep**.
+- Extended poor sleep behaviours can lead to negative health consequences.
+- **Recommendation:** Introduce and promote healthy night-time, wind-down routines and methods to reduce screen time.
 
 ---
 
 ### Weight Tracking
 
+
+
 ---
 
-### Other Insight
+### METs Analysis
+
+
+
+---
+
+### Activity Levels
+
+
 
 --- 
 
