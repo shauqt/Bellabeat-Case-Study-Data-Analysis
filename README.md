@@ -111,7 +111,7 @@ Using SQL, I also joined multiple tables to create new, analysis-ready datasets 
 
 The Python file can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/bellabeat.ipynb).
 
-The SQL queries can be accessed in this [folder](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/tree/main/SQL%20queries)
+The SQL queries can be accessed in this [folder](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/tree/main/SQL%20queries).
 
 ---
 
@@ -252,7 +252,7 @@ Some quick insights:
 - Out of the 33 total participants, 24 utilized sleep logging features whereas only 8 had substantial usage of weight logging.
 - Average METs generally peaked around 5-7 PM during the week.
 
-The full interactive Power BI dashboard can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix)
+The full interactive Power BI dashboard can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/Bellabeat.pbix).
 
 ## Part 6: Deeper Analysis 
 
@@ -331,6 +331,23 @@ _Figure 4b: Weekly METs Heatmap_
 --- 
 
 ## Part 7: Shareholder Recommendations
+
+Based on user demographics, behaviours, and engagement, it is recommended that Bellabeat should shift and market itself as a **companion that aims to empower and improve the daily lives of users**. The company can accomplish this by making the following changes:
+- **Enhance sleep support through structured habit-building tools.** Given that users average 6.29 hours of sleep and spend 1–2 hours awake in bed, Bellabeat can introduce features such as wind-down routines, screen-time reduction challenges, and guided breathing exercises. Helping users form healthier evening habits could meaningfully improve sleep quality and overall engagement.
+
+- **Increase weight-tracking adoption through positive, low-pressure gamification.** Only 24% of users log their weight, suggesting low engagement with this feature. Reframing weight logging as a consistency-based habit—supported by streaks, badges, and trend visualization—can make the feature more approachable and reduce performance-related anxiety, leading to more consistent usage.
+
+- **Offer adaptive fitness programs aligned with user behavior patterns.** With 70% of users logging activity and peak MET levels occurring between 5–7 PM, Bellabeat can deliver timely nudges such as post-work challenges, hydration reminders, or reflective journal prompts. These adaptive programs would help users build sustainable routines that fit naturally into their daily schedules.
+
+- **Optimize behavior-driving notifications using A/B-tested timing.** Bellabeat can test different reminder delivery windows—such as morning hydration prompts or evening mindfulness messages—to identify the most effective times for influencing user behavior and maximizing engagement.
+
+- **Expand lifestyle support through healthy content and device integrations.** Introducing curated “Bellabeat Recipes” or partnering with smart scales and complementary wearables can deepen the Bellabeat ecosystem and help users form healthier routines beyond physical activity tracking alone.
+
+- **Enable more targeted product development through enhanced segmentation.** Collecting demographic variables in future datasets would allow Bellabeat to segment users (e.g., early-career professionals, parents, midlife wellness users) and tailor features, content, and marketing strategies to specific groups more effectively.
+
+---
+
+## Part 8: Future Steps & Improvements
 
 
 
