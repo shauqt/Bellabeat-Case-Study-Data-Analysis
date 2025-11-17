@@ -269,7 +269,20 @@ _Figure 1: Average Hours Asleep Versus Hours in Bed Over 30 Days_
 
 ### Weight Tracking
 
+As noted in the overview, **only 8 of the 33 participants** (approximately **24%**) made use of the weight-tracking feature. Although usage is low, two participants logged enough entries to support a 30-day time-series analysis. Their data indicates an overall downward trend in weight, highlighting a small but meaningful segment of engaged users. This presents an opportunity for Bellabeat to better support and potentially expand this motivated user group.
 
+<img width="629" height="533" alt="weight_over_time_a" src="https://github.com/user-attachments/assets/c105011e-4950-4094-8a69-2a92084dc500" />
+
+_Figure 2a: User A Weight Over 30 Days_
+
+<img width="612" height="481" alt="weight_over_time_b" src="https://github.com/user-attachments/assets/aca092dd-e14d-4b77-8731-7b4c5f5164de" />
+
+_Figure 2b: User B Weight Over 30 Days_
+
+**Key Takeaways:**
+- Minimal adoption of the weight-tracking feature suggests that users may not perceive it as essential or may find it unintuitive.
+- Yet, those who consistently used it demonstrated meaningful health improvements, including steady weight reduction.
+- **Recommendation:** Bellabeat should enhance and promote the feature by offering clearer value messaging, easier data entry, and personalized progress feedback to encourage more users to engage with weight management tools.
 
 ---
 
