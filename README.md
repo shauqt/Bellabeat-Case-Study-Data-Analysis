@@ -109,6 +109,10 @@ To streamline the analysis across key areas (sleep/weight patterns, fitness acti
 
 Using SQL, I also joined multiple tables to create new, analysis-ready datasets that highlighted specific insights and relationships. In particular, I generated a weight_log_usage table and a sleep_log_usage table to more effectively examine usage patterns and behavioral trends.
 
+The Python file can be downloaded [here](https://github.com/shauqt/Bellabeat-Case-Study-Data-Analysis/blob/main/bellabeat.ipynb).
+
+The SQL queries can be accessed in this 
+
 ---
 
 ## Part 4: Cleaned Data Structure
@@ -286,15 +290,43 @@ _Figure 2b: User B Weight Over 30 Days_
 
 ---
 
-### METs Analysis
+### Activity Levels
 
+Approximately **70% of users log daily physical activity**, while only 20% have been categorized as "Active" or "Very Active". The various categories were created based on the daily steps users took, with Active being defined as greater than 10,000 daily steps and Very Active being defined as greater than 12,500. While not a perfect metric to assess activity levels, given the data, it was the most effective method to categorize users into different demographics.
 
+Overall, many smart device users demonstrate a high baseline engagement with fitness, making them an ideal market for Bellabeat to continue supporting and providing new incentives/features.
+
+<img width="601" height="430" alt="activity_level" src="https://github.com/user-attachments/assets/f134f650-f677-4da8-b2df-4c9246cbe3ca" />
+
+_Figure 3: Percentage of Users By Activity Level_
+
+**Key Takeaways:**
+- Users are generally active on a consistant basis, but not many are considered "Active". This suggests many users track their activity, but are not reaching the recommended daily movement levels.
+- Opportunity exists to expand in this market and create a loyal customer base that chooses Bellabeat for their fitness needs.
+- **Recommendation:** Implement features like activity reminders, milestone badges, coaching tips, and motivational nudges/challenges to help users reach their health goals, develop a more personalized experience, and increase engagement from users.
 
 ---
 
-### Activity Levels
+### METs Analysis
 
+Delving deeper into activity and fitness, is the Metabolic Equivalent of Tasks (METs) metric. METs is a standardized way to measure how much energy the body uses during physical activity. For reference, 1 MET is the body at rest. Therefore, the higher the METs value, the greater the physical activity.
 
+Analyzing users' average METs revealed that user peak activity levels occured between 5 PM and 7 PM. This suggests that many of the participants are either students or working professionals and typically excerised after work/school.
+
+<img width="626" height="644" alt="mets_by_time_of_day" src="https://github.com/user-attachments/assets/d5699630-382c-46ca-9435-af0c71fe13d9" />
+
+_Figure 4a: Average METs by Time of Day_
+
+Looking at the data on a weekly basis, the pattern of METs peaking after work hours remained consistent throughout the weekdays. However, on weekends this pattern shifts, with peak MET levels occurring in the early afternoon (around 1 PM). This suggests that most users likely work standard daytime schedules and prefer to exercise earlier in the day during their time off.
+
+<img width="841" height="714" alt="mets_weekly_heatmap" src="https://github.com/user-attachments/assets/5e3f4259-976b-49a8-a436-d747eeaf61cb" />
+
+_Figure 4b: Weekly METs Heatmap_
+
+**Key Takeaways:**
+- Average METs peaks roughly between 5-7 PM during the weekdays. On weekends, METs peak ealier around 1 PM.
+- Indicates a majority of users work standard schedules and exercise after work/school.
+- **Recommendations:** Develop personalized coaching features that help users balance work and fitness. Examples include after-work activity guidance, healthy routine-building prompts, and weekend workout suggestions based on user behavior patterns.
 
 --- 
 
